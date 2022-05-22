@@ -1,4 +1,4 @@
 const stringToNumber = function(str){
-    return Number(stringToNumber) ;
+    return Number(str) ;
   }
   stringToNumber("1234")
