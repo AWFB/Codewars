@@ -16,8 +16,16 @@ var number = function (busStops) {
   return x
 }
 
+// Example using reduce
 const number2 = (busStops) =>
   busStops.reduce((rem, [on, off]) => rem + on - off, 0)
+
+  // The reduce() method executes a user-supplied "reducer" callback function on each element of the array, 
+  // in order, passing in the return value from the calculation on the preceding element. 
+  // The final result of running the reducer across all elements of the array is a single value.
+  
+  // [15, 16, 17, 18, 19].reduce( (previousValue, currentValue, currentIndex, array) => previousValue + currentValue, 10 )
+
 
 console.log(
   number2([
